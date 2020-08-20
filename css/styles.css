@@ -1,0 +1,158 @@
+/* Cache Killer plugin chrome */
+
+ html, body, header, div{
+    border: 0 ;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+body{
+    font-family:Soleil!important;
+    background-color: #ccc;
+    color:#000;
+
+}
+#content{
+    background: #fff;
+    width: 90%;
+    margin: 1.5em auto;
+    padding: 1.5em 1em;
+    /* border:1px solid #f00; */
+}
+a{
+    color:#0DC78B;
+}
+h1{
+    color:#0DC78B;
+}
+
+#content h3{
+    text-align: center;
+    color:#F7BC1C;
+}
+#content #new{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    margin-bottom: 1em;
+}
+#content #new a{
+    background: #1fe6a8;
+    color:#fff;
+    padding: .275em 1.5em;
+    text-decoration: none;
+}
+#content #new a:hover{
+    background: #fff;
+    border: 1px solid #1fe6a8;
+    color:#1fe6a8;
+    padding: .275em 1.5em;
+}
+#content table{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #1fe6a8;
+    border-collapse: collapse;
+}
+#content table thead tr{
+    background: #1fe6a8;
+    color:#fff;
+}
+#content table thead tr th{
+    padding: 0.375em 0.75em;
+}
+
+#content table tbody tr td{
+    border: #1fe6a8 solid 1px;
+    padding: 0.15em 0.75em;
+}
+#content table tbody tr:hover{
+    background: #1fe6a8;
+    color:#fff;
+    cursor: pointer;
+    border:1px solid #fff;
+}
+
+/* ******************* Messages ********************* */
+
+.msg {
+    width: 50%;
+    margin: 1em auto;
+    text-align:center;
+}
+.msg.success{
+    color:#0DC78B;
+}
+.msg.alert{
+    color:#EDAD00;
+}
+.msg.error{
+    color:#E64C2D;
+}
+
+/* ******************* Form ********************* */
+
+form{
+    width: 40%;
+    margin: auto;
+    border: 1px solid #1fe6a8;
+    padding: 1em 2em;
+}
+form input, form textarea{
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid #1fe6a8;
+    width: 40%;
+    font-size: 12px;
+}
+form label{
+    vertical-align: top;
+    text-align: right;
+    display: inline-block;
+    width: 35%;
+    padding: 0 .5em;
+} 
+form .buttons{
+
+    width: 40%;
+    margin: 1em auto;
+}
+form .buttons .save, form .buttons .clean{ 
+    padding: .2em 1em;
+    border: none;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+form .buttons .save{
+    background: #0c29d0;
+    color:#fff;
+    border:1px solid  #0c29d0;
+}
+form .buttons .save:hover{
+    background: #fff;
+    color:#0c29d0;
+    border:1px solid  #0c29d0;
+}
+form .buttons .clean{ 
+    background: #fff;
+    border:1px solid  #ffffff;
+    color:#F7BC1C;
+}
+form .buttons .clean:hover{ 
+    background: #F7BC1C;
+    color:#fff;
+    border:1px solid  #F7BC1C;
+}
+.btn-listing{
+    width: 45%;
+    margin: 1em auto 0;
+}
+.btn-listing a{
+    color:#6A00A3;
+    font-size: 14px;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.btn-listing a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+  
+.msg-error {
+    font-size: 10px;
+    text-align: center;
+}
+.msg-error p{
+    margin: 0.2em 0;
+}
+.error{
+    color: #f00;
+}
+.input-error{
+    border:#f00 1px solid;
+}
