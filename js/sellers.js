@@ -18,7 +18,7 @@ function load_data_json(){
 function update(data, id) {
     $.ajax({
         type : 'PUT',
-        url: sellers+id,
+        url: sellers_api+id,
         contentType: 'application/json',
         data: JSON.stringify(data),
         success: () => {
@@ -50,7 +50,7 @@ function load_data(data){
             <td>${e['company_name']}</td>"
             <td>${e['mobile_phone']}</td>"
             <td data-id="${e['id']}">
-                <a class='btn-edit' href='product-rating/form.html?id=${e['id']}'>Editar</a> |
+                <a class='btn-edit' href='sellers/form.html?id=${e['id']}'>Editar</a> |
                 <a class='btn-delete' href='#'>Deletar</a>
             </td>
         </tr>`;
@@ -66,7 +66,7 @@ function load_data(data){
 
 function delete_data(id){
     $.ajax({
-        url : sellers + id
+        url : sellers_api + id
         , type: 'DELETE'
         , success: (data)=> {
             load_data_json();
@@ -80,7 +80,7 @@ function delete_data(id){
 // ============ Find id in Json File and Load html
 function findById(id){
     $.ajax({
-        url : sellers+id
+        url : sellers_api+id
         ,dataType : 'json'
         ,type : 'get'
         ,success: (data)=>{
@@ -99,7 +99,7 @@ function findById(id){
 function save(data) {
     $.ajax({
         type : 'POST',
-        url: sellers,
+        url: sellers_api,
         contentType: 'application/json',
         data: data,
         success: () => {
