@@ -32,11 +32,11 @@ function update(data, id) {
 
 function toJson(data) {
     let obj = {};
-    obj['brand'] = data[0].value;
-    obj['business_type'] = data[1].value;
-    obj['cnpj'] = data[2].value;
-    obj['company_name'] = data[3].value;
-    obj['mobile_phone'] = data[4].value;
+    obj['brand'] = data[1].value;
+    obj['business_type'] = data[2].value;
+    obj['cnpj'] = data[3].value;
+    obj['company_name'] = data[4].value;
+    obj['mobile_phone'] = data[5].value;
     return obj
 }
 // ============ Load Json result in HTML
